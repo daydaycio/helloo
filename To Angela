@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Angela</title>
+</head>
+<body>
+  <script type="text/python">
+    // Insert your Python code here
+    // Make sure to replace "Your Name" with your actual name
+    function confess_to_someone(name) {
+      console.log("Hello, " + Angela + "!");
+      brython_time_sleep(2000);
+      console.log("I hope you're doing well.");
+      brython_time_sleep(2000);
+      console.log("There's something important I need to tell you.");
+      brython_time_sleep(2000);
+      console.log("Ever since you left, I've realized how much you mean to me.");
+      brython_time_sleep(3000);
+      console.log("I've become fond of you, and I can't keep it to myself any longer.");
+      brython_time_sleep(3000);
+      console.log("You have a special place in my heart, and I wanted you to know that.");
+      brython_time_sleep(3000);
+      console.log("I understand if this comes as a surprise, but I wanted to be honest with you.");
+      brython_time_sleep(3000);
+      console.log("Please take your time to process this, and I'm here if you want to talk.");
+      brython_time_sleep(3000);
+      console.log("Thank you for listening.");
+      brython_time_sleep(2000);
+      console.log("Sincerely,");
+      brython_time_sleep(2000);
+      console.log("Dray:>");
+    }
+
+    function brython_time_sleep(milliseconds) {
+      // Function to simulate time.sleep in Brython
+      var waitUntil = new Date().getTime() + milliseconds;
+      while (new Date().getTime() < waitUntil) { }
+    }
+
+    if (window.confirm("Do you want to confess your feelings?")) {
+      var recipient_name = window.prompt("Please enter the recipient's name: ");
+      confess_to_someone(recipient_name);
+    }
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.5/brython.min.js"></script>
+</body>
+</html>
